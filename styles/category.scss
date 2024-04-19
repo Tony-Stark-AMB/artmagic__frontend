@@ -1,0 +1,255 @@
+@import "./colors", "./parts/main-products", "./parts/header", "./parts/footer";
+
+.main{
+    margin: 40px 0 0 0;
+    &__wrap{
+        display: block;
+    }
+    &__title{
+        margin: 40px 0 0 0;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0 80px 0;
+    }
+    &__category-banner{ 
+        width: 45%;
+        margin: 20px 0 0 0;
+        border-radius: 8px;
+        height: 300px;
+    }
+    &__category-other{
+        width: 50%;
+        margin: 20px 0 0 0;
+        
+    }
+    &__category-brands{
+        width: 45%;
+        height: 300px;
+    }
+}
+
+.category-banner{ 
+    width: 100%;
+    &__list{}
+    &__item{
+        width: 100%;
+        height: 300px;
+        background-color: red;
+    }
+    &__img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.category-others{
+    margin: 80px 0;
+    &__title{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__list{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform .3s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__img{
+        width: 100%;
+        object-fit: cover;
+        &__wrap{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+.category-brands{
+    width: 45%;
+    height: 300px;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+       margin-top: 40px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-evenly;
+    }
+    &__img{
+        width: 225px;
+        height: 225px;
+        object-fit: cover;
+    }
+}
+ 
+.footer{
+
+    padding: 40px 0 0 0;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 -2px 4px 0 rgba(0, 0, 0, 0.12);
+    &__list{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__info{
+        padding: 16px 24px;
+        min-height: 10vh;
+        &__title{
+            margin-bottom: 15px;
+        }
+        &__list{
+            min-height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        &__item{}
+        &__link{
+            color: $c8;
+            transition: color .3s ease;
+            &:hover{
+                color: $c9;
+            }
+        }
+    }
+
+    &__help{
+        padding: 16px 24px;
+        min-height: 10vh;
+        &__title{
+            margin-bottom: 15px;
+        }
+        &__list{
+            min-height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        &__item{}
+        &__link{
+            color: $c8;
+            transition: color .3s ease;
+            &:hover{
+                color: $c9;
+            }
+        }
+    }
+
+    &__service{
+        padding: 16px 24px;
+        min-height: 15vh;
+        &__title{
+            margin-bottom: 15px;
+        }
+        &__list{
+            min-height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        &__item{}
+        &__link{
+            color: $c8;
+            transition: color .3s ease;
+            &:hover{
+                color: $c9;
+            }
+        }
+    }
+
+    &__social{
+        padding: 16px 24px;
+        &__title{
+            margin-bottom: 15px;
+        }
+        &__list{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__item{}
+        &__link{
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            padding: 5px;
+            transition: background-color .3s ease;
+            &:first-child{
+                &:hover{
+                    background-color: $c17;
+                }
+                & .footer__social__svg{
+                    transition: color .3s ease;
+                }
+                &:hover .footer__social__svg{
+                    color: $c6;
+                }
+            }
+            &:last-child{
+                &:hover{
+                    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+                    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+                    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+                    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+                    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+                    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+                    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+                    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+                }
+                & .footer__social__svg{
+                    transition: color .3s ease;
+                }
+                &:hover .footer__social__svg{
+                    color: $c6;
+                }
+            }
+        }
+        &__svg{
+            color: $c9;
+            width:20px;
+            height: 20px;
+        }
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $c5;
+        
+    }
+
+    &__approve{
+        width: 15%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__underground{
+        padding: 10px 0;
+        &__text{
+            font-size: 14px;
+            color: $c8;
+        }
+    }
+}
+
+.swiper{
+    margin-left: 0;
+    margin-right: 0;
+}
