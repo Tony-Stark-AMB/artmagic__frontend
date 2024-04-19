@@ -188,6 +188,8 @@
 }
 
 .header {
+  top: 0;
+  left: 0;
   position: fixed;
   z-index: 1000000;
   background-color: #fff;
@@ -458,7 +460,7 @@
   min-height: inherit;
 }
 .sidebar-main__wrap {
-  width: 15%;
+  width: 20%;
   grid-area: sidebar;
   position: fixed;
   min-height: 200vh;
@@ -468,7 +470,7 @@
 }
 .sidebar-main__list {
   padding: 16px 24px;
-  min-height: 40vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -517,7 +519,7 @@
 .main__wrap {
   padding: 91px 15px 0 15px;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 25% 75%;
   grid-template-areas: "sidebar main";
 }
 .main__banner {
@@ -546,20 +548,34 @@
 .main__catalog__title {
   margin: 20px 0;
 }
+.main__catalog__list {
+  height: 300px;
+  padding: 50px 0;
+}
 .main__catalog__item {
-  height: 265px;
+  height: 300px;
   padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
+  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
+  cursor: pointer;
+}
+.main__catalog__item:hover {
+  border: none;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  transform: scale(1.15);
 }
 .main__catalog__item__img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.main__catalog__item__img__wrap {
+  width: 200px;
+  height: 200px;
 }
 .main__catalog__item__title {
   display: inline-block;
@@ -572,9 +588,37 @@
 }
 .main__catalog__item__price {
   align-self: flex-start;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #f84147;
   font-weight: 600;
+}
+.promotion__title {
+  text-align: center;
+  margin: 40px 0;
+}
+.promotion__list {
+  width: 65%;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 50% 50%;
+  grid-row: auto auto;
+}
+.promotion__img {
+  width: 400px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease-in;
+  cursor: pointer;
+}
+.promotion__img:hover {
+  transform: scale(1.1);
+}
+.promotion__img__wrap {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
 }
 
 .footer {

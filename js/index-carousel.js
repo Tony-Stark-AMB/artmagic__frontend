@@ -1,4 +1,7 @@
+// import Aos from "aos.js";
 import {Swiper, Navigation, Pagination} from "./import.js";
+
+// console.log(Aos)
 
 export const {mainBanner, catalogCarousel} = {
  
@@ -15,12 +18,12 @@ export const {mainBanner, catalogCarousel} = {
     },
   },
   catalogCarousel: {
-    slidesPerView: 6,
-    slidesPerGroup: 6,
+    slidesPerView: 5,
+    slidesPerGroup: 5,
+    speed: 2000,
     pagination: {
-
+      clickable: true,
       el: ".swiper-pagination",
-      dynamicBullets: true,
       renderBullet: function (index, className) {
         return '<span class="' + className + '">' + (index + 1) + "</span>";
       },

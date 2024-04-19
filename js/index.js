@@ -4,5 +4,3 @@ document.querySelector('.swiper-menu').style.height = `${document.querySelector(
 else 
 document.querySelector('.swiper-menu').style.height = "";
 
-
-
