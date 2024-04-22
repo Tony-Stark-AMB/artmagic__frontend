@@ -1,5 +1,4 @@
-@import "./colors", "./parts/header", "./parts/sidebar-catalog",
-        "./parts/footer";
+@import "./colors", "./parts/main-products", "./parts/category-products", "./parts/sidebar-catalog", "./parts/header", "./parts/footer";
 
 .main{
     border-left: 1px solid $c5;
@@ -10,7 +9,7 @@
         overflow-x: hidden;
         padding: 120px 0 40px 0;
         display: grid;
-        grid-template-columns: calc(100% / 4.7) calc(100% / 5 * 4);
+        grid-template-columns: 20% calc(100% / 5 * 4);
         grid-template-rows: 60px 20px calc(100% - 40px);
         grid-template-areas: 
         "title title"
@@ -28,18 +27,16 @@
         &__list{
             display: flex;
             flex-wrap: wrap;
-            height: 800px;
+            height: 1200px;
         }
         &__item{
             width: calc(100% / 5);
-            height: 265px;
+            height: 350px;
             padding: 16px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            border-bottom: 1px solid $c5;
-            border-right: 1px solid $c5;
             &__img{
                 width: 100%;
                 object-fit: cover;

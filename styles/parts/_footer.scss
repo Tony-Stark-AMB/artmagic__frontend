@@ -115,7 +115,7 @@
                     color: $c6;
                 }
             }
-            &:nth-child(3){
+            &:last-child{
                 &:hover{
                     background-color: $c6;
                     transform: scale(1.5);
