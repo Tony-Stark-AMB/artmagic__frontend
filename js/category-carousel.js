@@ -29,7 +29,6 @@ const {categoryBanner, brandsBanner, catalogProducts} = {
     },
 
     catalogProducts: {
-      
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -44,4 +43,4 @@ const {categoryBanner, brandsBanner, catalogProducts} = {
 
 new Swiper(".main__category-banner", categoryBanner);
 new Swiper(".main__category-brands", brandsBanner);
-new Swiper(".main__catalog__carousel", catalogProducts);
+new Swiper(".main__catalog__list__wrap", catalogProducts);

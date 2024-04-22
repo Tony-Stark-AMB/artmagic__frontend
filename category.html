@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/category.css">
     <title>Document</title>
@@ -117,7 +118,7 @@
                     Блокноти, папір, картон
                 </h1>
                 <div class="main__content">
-                    <section class="swiper main__category-banner">
+                    <section data-aos="fade-left" class="swiper main__category-banner">
                         <div class="swiper-wrapper category-banner__list">
                           <div class="swiper-slide category-banner__item">
                             <img class="category-banner__img" src="./assets/category-carousel/slide-1.jpg" alt="">
@@ -144,7 +145,7 @@
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </section>
-                    <section class="swiper main__category-brands">
+                    <section data-aos="fade-right" class="swiper main__category-brands">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
                             <div class="category-brands__item">
@@ -222,7 +223,7 @@
                         <div class="swiper-pagination"></div>
                     </section>
                 </div>
-                <section class="main__category-others">
+                <section data-aos="fade-down" class="main__category-others">
                     <div class="category-others">
                         <h3 class="category-others__title">Підкатегорії</h3>
                         <ul class="category-others__list">
@@ -254,248 +255,338 @@
                     </div>
                 </section>
                 <section class="main__catalog">
-                    <h2 class="main__catalog__title">Каталог</h2>
-                    <div class="swiper main__catalog__carousel">
+                    <h2 data-aos="fade-down" class="main__catalog__title">Каталог</h2>
+                    <div data-aos="fade-down" class="swiper main__catalog__list__wrap">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="catalog-carousel__list">
-                                    <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                <div class="main__catalog__list">
+                                    <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                        <span class="main__catalog__item__price">500 грн</span>
                                     </div>
-                                    <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
+                                      </div>
+                                      <p class="main__catalog__item__title">product 2</p>
+                                      <span class="main__catalog__item__price">700 грн</span>
                                     </div>
-                                    <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
+                                      </div>
+                                      <p class="main__catalog__item__title">product 3</p>
+                                      <span class="main__catalog__item__price">300 грн</span>
                                     </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                      <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                      <span class="main__catalog__item__price">500 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
+                                      <p class="main__catalog__item__title">product 2</p>
+                                      <span class="main__catalog__item__price">700 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
                                       </div>
-            
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                      <p class="main__catalog__item__title">product 3</p>
+                                      <span class="main__catalog__item__price">300 грн</span>
+                                    </div>
+          
+                                    <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                        <span class="main__catalog__item__price">500 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                      <p class="main__catalog__item__title">product 2</p>
+                                      <span class="main__catalog__item__price">700 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
+                                      <p class="main__catalog__item__title">product 3</p>
+                                      <span class="main__catalog__item__price">300 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                      <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                      <span class="main__catalog__item__price">500 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                      <p class="main__catalog__item__title">product 2</p>
+                                      <span class="main__catalog__item__price">700 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
+                                      <p class="main__catalog__item__title">product 3</p>
+                                      <span class="main__catalog__item__price">300 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                        <span class="main__catalog__item__price">500 грн</span>
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                      <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 2</p>
+                                        <span class="main__catalog__item__price">700 грн</span>
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                      <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 3</p>
+                                        <span class="main__catalog__item__price">300 грн</span>
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
-                                      </div>
-                                </div>
+                                  </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="catalog-carousel__list">
-                                    <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                <div class="main__catalog__list">
+                                    <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                        <span class="main__catalog__item__price">500 грн</span>
                                     </div>
-                                    <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
+                                      </div>
+                                      <p class="main__catalog__item__title">product 2</p>
+                                      <span class="main__catalog__item__price">700 грн</span>
                                     </div>
-                                    <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
+                                      </div>
+                                      <p class="main__catalog__item__title">product 3</p>
+                                      <span class="main__catalog__item__price">300 грн</span>
                                     </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                      <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                      <span class="main__catalog__item__price">500 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
+                                      <p class="main__catalog__item__title">product 2</p>
+                                      <span class="main__catalog__item__price">700 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
                                       </div>
-            
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                      <p class="main__catalog__item__title">product 3</p>
+                                      <span class="main__catalog__item__price">300 грн</span>
+                                    </div>
+          
+                                    <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                        <span class="main__catalog__item__price">500 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                      <p class="main__catalog__item__title">product 2</p>
+                                      <span class="main__catalog__item__price">700 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
+                                      <p class="main__catalog__item__title">product 3</p>
+                                      <span class="main__catalog__item__price">300 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                      <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                      <span class="main__catalog__item__price">500 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                      <p class="main__catalog__item__title">product 2</p>
+                                      <span class="main__catalog__item__price">700 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
+                                      <p class="main__catalog__item__title">product 3</p>
+                                      <span class="main__catalog__item__price">300 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                        <span class="main__catalog__item__price">500 грн</span>
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                      <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 2</p>
+                                        <span class="main__catalog__item__price">700 грн</span>
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                      <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 3</p>
+                                        <span class="main__catalog__item__price">300 грн</span>
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
-                                      </div>
-                                </div>
+                                  </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="catalog-carousel__list">
-                                    <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                <div class="main__catalog__list">
+                                    <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                        <span class="main__catalog__item__price">500 грн</span>
                                     </div>
-                                    <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
+                                      </div>
+                                      <p class="main__catalog__item__title">product 2</p>
+                                      <span class="main__catalog__item__price">700 грн</span>
                                     </div>
-                                    <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
+                                      </div>
+                                      <p class="main__catalog__item__title">product 3</p>
+                                      <span class="main__catalog__item__price">300 грн</span>
                                     </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                      <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                      <span class="main__catalog__item__price">500 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
+                                      <p class="main__catalog__item__title">product 2</p>
+                                      <span class="main__catalog__item__price">700 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
                                       </div>
-            
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                      <p class="main__catalog__item__title">product 3</p>
+                                      <span class="main__catalog__item__price">300 грн</span>
+                                    </div>
+          
+                                    <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                        <span class="main__catalog__item__price">500 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                      <p class="main__catalog__item__title">product 2</p>
+                                      <span class="main__catalog__item__price">700 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
+                                      <p class="main__catalog__item__title">product 3</p>
+                                      <span class="main__catalog__item__price">300 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                      <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                      <span class="main__catalog__item__price">500 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                      <p class="main__catalog__item__title">product 2</p>
+                                      <span class="main__catalog__item__price">700 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                      <div class="main__catallog__item__img__wrap">
+                                          <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
+                                      <p class="main__catalog__item__title">product 3</p>
+                                      <span class="main__catalog__item__price">300 грн</span>
+                                    </div>
+                                    <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-1.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 1 asdsaddsadasdadsad </p>
+                                        <span class="main__catalog__item__price">500 грн</span>
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-1.png" alt="">
-                                        <p class="catalog-carousel__title">product 1 asdsaddsadasdadsad </p>
-                                        <span class="catalog-carousel__price">500 грн</span>
+                                      <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-2.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 2</p>
+                                        <span class="main__catalog__item__price">700 грн</span>
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-2.png" alt="">
-                                        <p class="catalog-carousel__title">product 2</p>
-                                        <span class="catalog-carousel__price">700 грн</span>
+                                      <div class="main__catalog__item">
+                                        <div class="main__catallog__item__img__wrap">
+                                            <img class="main__catalog__item__img" src="./assets/products/product-3.png" alt="">
+                                        </div>
+                                        <p class="main__catalog__item__title">product 3</p>
+                                        <span class="main__catalog__item__price">300 грн</span>
                                       </div>
-                                      <div class="catalog-carousel__item">
-                                        <img class="catalog-carousel__img" src="./assets/products/product-3.png" alt="">
-                                        <p class="catalog-carousel__title">product 3</p>
-                                        <span class="catalog-carousel__price">300 грн</span>
-                                      </div>
-                                </div>
+                                  </div>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div> 
@@ -510,9 +601,6 @@
                     <ul class="footer__info__list">
                         <li class="footer__info__item">
                             <a class="footer__info__link" href="">Про нас</a>
-                        </li>
-                        <li class="footer__info__item">
-                            <a class="footer__info__link" href="">Усі категорії</a>
                         </li>
                         <li class="footer__info__item">
                             <a class="footer__info__link" href="">Контакти</a>
@@ -533,24 +621,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__service">
-                    <h6 class="footer__service__title">
-                        Сервіси
-                    </h6>
-                    <ul class="footer__service__list">
-                        <li class="footer__service__item">
-                            <a class="footer__service__link" href="">Бонусний рахунок</a>
-                        </li>
-                        <li class="footer__service__item">
-                            <a class="footer__service__link" href="">Подарункові сертифікати</a>
-                        </li>
-                        <li class="footer__service__item">
-                            <a class="footer__service__link" href="">Корпоративним клієнтам</a>
-                        </li>
-                        <li class="footer__service__item">
-                            <a class="footer__service__link" href="">Співпраця з нами</a>
-                        </li>
-                    </ul>
+                <div class="footer__payment">
+                    <h6 class="footer__payment__title">
+                        Ми приймаємо
+                    </h2>
+                    <div class="footer__payment__img__wrap">
+                        <img class="footer__payment__img" src="./assets/payment.png" alt="">
+                    </div>
                 </div>
                 <div class="footer__social">
                     <h6 class="footer__social__title">
@@ -670,6 +747,10 @@
         </ul>
       </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/header.js"></script>
     <script type="module" src="./js/category-carousel.js"></script>
     

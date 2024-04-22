@@ -1,0 +1,16 @@
+.main{
+    &__catalog{
+        &__title{
+            text-align: center;
+        }
+        &__list{
+            height: 1200px;
+            display: flex;  
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+        &__item{
+            width: calc(100% / 5);
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@import "./colors", "./parts/main-products", "./parts/header", "./parts/footer";
+@import "./colors", "./parts/main-products", "./parts/category-products", "./parts/header", "./parts/footer";
 
 .main{
     margin: 40px 0 0 0;
@@ -17,7 +17,7 @@
         width: 45%;
         margin: 20px 0 0 0;
         border-radius: 8px;
-        height: 300px;
+        height: 400px;
     }
     &__category-other{
         width: 50%;
@@ -26,7 +26,8 @@
     }
     &__category-brands{
         width: 45%;
-        height: 300px;
+        height: 400px;
+        margin: 20px 0 0 0;
     }
 }
 
@@ -35,8 +36,6 @@
     &__list{}
     &__item{
         width: 100%;
-        height: 300px;
-        background-color: red;
     }
     &__img{
         width: 100%;
@@ -78,7 +77,7 @@
 
 .category-brands{
     width: 45%;
-    height: 300px;
+    // height: 400px;
     &__list{
         display: flex;
         justify-content: space-between;
@@ -168,61 +167,6 @@
             &:hover{
                 color: $c9;
             }
-        }
-    }
-
-    &__social{
-        padding: 16px 24px;
-        &__title{
-            margin-bottom: 15px;
-        }
-        &__list{
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        &__item{}
-        &__link{
-            border-radius: 50%;
-            display: grid;
-            place-items: center;
-            padding: 5px;
-            transition: background-color .3s ease;
-            &:first-child{
-                &:hover{
-                    background-color: $c17;
-                }
-                & .footer__social__svg{
-                    transition: color .3s ease;
-                }
-                &:hover .footer__social__svg{
-                    color: $c6;
-                }
-            }
-            &:last-child{
-                &:hover{
-                    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
-                    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
-                    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
-                    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
-                    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
-                    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
-                    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
-                    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-                }
-                & .footer__social__svg{
-                    transition: color .3s ease;
-                }
-                &:hover .footer__social__svg{
-                    color: $c6;
-                }
-            }
-        }
-        &__svg{
-            color: $c9;
-            width:20px;
-            height: 20px;
         }
     }
 
