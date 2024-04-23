@@ -66,8 +66,8 @@
                             </div>
                         </div>
                         <div class="header-call__top">
-                            <a class="header-call__top__link c6" href=""><i class="fa fa-lock lock-small" aria-hidden="true"></i>Авторизація</a>
-                            <a class="header-call__top__link c6" href=""><i class="fa fa-user user-small" aria-hidden="true"></i>Особистий кабінет</a>
+                            <button class="header-call__top__link c6" type="button" data-bs-toggle="modal" data-bs-target="#login__modal"><i class="fa fa-lock lock-small" aria-hidden="true"></i>Авторизація</button>
+                            <button class="header-call__top__link c6" href=""><i class="fa fa-user user-small" aria-hidden="true"></i>Особистий кабінет</button>
                         </div>
                         <div class="header-call__wrap">
                             <div class="header-call__main">
@@ -680,6 +680,23 @@
             </div>
         </footer>
     </div>
+    <div class="modal fade modal__login" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ul class="header-sidemenu">
@@ -746,6 +763,7 @@
             
         </ul>
       </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
     <script>
