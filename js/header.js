@@ -83,3 +83,16 @@ const closeNav = () => {
   fullContent.style.opacity = "1";
   document.getElementById("mySidenav").style.opacity = "1";
 }
+
+import { Swiper, Navigation } from "./import.js";
+
+new Swiper(".login__registration", {
+  direction: "vertical",
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev",
+  },
+  allowTouchMove: false,
+  noSwiping: false,
+  modules: [Navigation]
+});

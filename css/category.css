@@ -489,6 +489,46 @@
   right: 5%;
 }
 
+.login__modal__form,
+.registration__modal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+}
+.login__modal__form input[type=text], .login__modal__form input[type=password],
+.registration__modal__form input[type=text],
+.registration__modal__form input[type=password] {
+  width: 80%;
+  padding: 5px 0 5px 10px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #ddd;
+}
+.login__modal__link,
+.registration__modal__link {
+  transition: color 0.3s ease;
+}
+.login__modal__link:hover,
+.registration__modal__link:hover {
+  color: #000;
+}
+.login__modal__link__wrap,
+.registration__modal__link__wrap {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.swiper {
+  margin: 0;
+}
+
+.login__registration {
+  height: 350px;
+}
+
 .footer {
   padding: 40px 0 0 0;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 -2px 4px 0 rgba(0, 0, 0, 0.12);
