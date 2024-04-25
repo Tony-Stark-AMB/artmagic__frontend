@@ -92,6 +92,7 @@ new Swiper(".login__registration", {
     nextEl: ".swiper-btn-next",
     prevEl: ".swiper-btn-prev",
   },
+  speed: 1000,
   allowTouchMove: false,
   noSwiping: false,
   modules: [Navigation]

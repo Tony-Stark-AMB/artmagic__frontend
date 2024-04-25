@@ -41,6 +41,7 @@
 
 .header-catalog{
     width: 8%;
+    margin: 0 10px;
     &__btn{
     width: 100%;
     display: flex;
@@ -117,6 +118,7 @@
         
     }
     &__top{
+        width: 22%;
         margin-bottom: 5px;
         &__content{
             padding: 8px 0;   
@@ -144,9 +146,44 @@
         @media (max-width: 576px){
             font-size: 12px;
         }
-    }    
+    }
+    &__btn{
+        border: none;
+        outline: none;
+        background: $c6;
+        padding: 0;
+
+    }
 }
 
+    
+.header-basket{
+    &__icon{
+        width: 30px;
+        color: $c6;
+        &__wrap{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background-color: $c17; 
+            cursor: pointer;
+            & .header-basket__icon{
+                transition: transform .3s ease;
+                
+            }
+            &:hover .header-basket__icon{
+                transform: scale(1.1);
+            }
+        }
+    }  
+
+    &__wrap{
+        margin-left: 10px;
+        width: 5%;
+    }
+}
 
 
 
@@ -363,4 +400,39 @@
 
 .login__registration{
     height: 350px;
+}
+
+.call__modal{
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 30vh;
+        & input[type="text"],
+        & input[type="telephone"]{
+            width: 80%;
+            padding: 5px 0 5px 10px;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid $c5;
+        }
+        
+    }
+    &__input__wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & input[type="text"]{
+            width: 45%;
+            padding: 5px 0 5px 10px;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid $c5;
+        }
+    }
+}
+
+.basket__modal{
+    
 }

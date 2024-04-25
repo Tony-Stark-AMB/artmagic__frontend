@@ -71,19 +71,27 @@
                         <div class="header-call__wrap">
                             <div class="header-call__main">
                                 <div class="header-call">
-                                    <a href="tel:+380680174075">
+                                    <button class="header-call__btn" type="button" data-bs-toggle="modal" data-bs-target="#call__modal">
                                         <img src="./assets/icon-phone.png" alt="">
-                                    </a>
+                                    </button>
                                 </div>
                                 <div>
-                                    <p class="header-call__text">Зателефонуйте нам: <a class="header-call__link" href="tel:+380680174075">(068) 017-40-75</a></p>
-                                    <p class="header-call__text">e-mail: <a class="header-call__link" href="">artmagicinetrnet@gmail.com</a></p>
+                                    <p class="header-call__text">Зателефонуйте нам: <a class="header-call__link" type="button" data-bs-toggle="modal" data-bs-target="#call__modal">(068) 017-40-75</a></p>
+                                    <p class="header-call__text">e-mail: <a class="header-call__link" type="button" data-bs-toggle="modal" data-bs-target="#call__modal">artmagicinetrnet@gmail.com</a></p>
                                 </div>
                             </div>
                         </div>
-                        
-                    </div>
-         
+                        <div class="header-basket__wrap" type="button" data-bs-toggle="modal" data-bs-target="#basket__modal">
+                            <div class="header-basket__icon__wrap">
+                                <svg class="header-basket__icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512"><path d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4
+                                    10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544
+                                    256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3
+                                    35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16
+                                    16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>        
                 </div>
             </div>        
             <!-- <div class="mobile-menu bg13">
@@ -462,43 +470,83 @@
           <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Авторизація та Реєстрація</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button tabindex="-1" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="swiper login__registration">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                       <div class="modal-body">
                         <form class="login__modal__form" action="">
-                          <input class="login__modal__input" type="text" placeholder="Логін">
-                          <input class="login__modal__input" type="password" placeholder="Пароль">
+                          <input tabindex="-1" class="login__modal__input" type="text" placeholder="Логін">
+                          <input tabindex="-1" class="login__modal__input" type="password" placeholder="Пароль">
                           <div class="login__modal__link__wrap">
-                              <a class="login__modal__link" href="">Забули пароль?</a>
-                              <div class="login__modal__link swiper-btn-next" href="">Реєстрація</div>
+                              <a class="login__modal__link" tabindex="-1">Забули пароль?</a>
+                              <div class="login__modal__link swiper-btn-next" tabindex="-1">Реєстрація</div>
                           </div>
-                          <button class="btn btn-primary" type="submit">Увійти</button>
+                          <button tabindex="-1" class="btn btn-primary" type="submit">Увійти</button>
                         </form>
                       </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="modal-body">
                         <form class="registration__modal__form" action="">
-                          <input class="registration__modal__input" type="text" placeholder="Логін">
-                          <input class="registration__modal__input" type="password" placeholder="Пароль">
-                          <input class="registration__modal__input" type="password" placeholder="Підтвердження паролю">
+                          <input tabindex="-1" class="registration__modal__input" type="text" placeholder="Логін">
+                          <input tabindex="-1" class="registration__modal__input" type="password" placeholder="Пароль">
+                          <input tabindex="-1" class="registration__modal__input" type="password" placeholder="Підтвердження паролю">
                           <div class="login__modal__link__wrap">
                             <div class="registration__modal__link swiper-btn-prev">Авторизація</div>
-                            <button class="btn btn-primary" type="submit">Зареєструватись</button>
+                            <button tabindex="-1" class="btn btn-primary" type="submit">Зареєструватись</button>
                           </div>
-                          
                         </form>
                       </div>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
           </div>
         </div>
       </div>
+    <div class="modal fade modal__call" id="call__modal" tabindex="-1" aria-labelledby="call__modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Зворотній зв'язок</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="call__modal__form" action="">
+                <h3 class="text-center">Контактні дані</h3>
+                <div class="call__modal__input__wrap">
+                    <input class="call__modal__input" type="text" placeholder="Ім'я">
+                    <input class="call__modal__input" type="text" placeholder="Прізвище">
+                </div>
+                <input class="call__modal__input" type="telephone" placeholder="Телефон">
+                <button class="btn btn-primary" type="submit">Залишити заявку</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade modal__basket" id="basket__modal" tabindex="-1" aria-labelledby="basket__modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content basket__modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body basket__modal__body">
+                <form class="basket__modal__form" action="">
+                    <div class="basket__modal__input__wrap">
+                        <input class="basket__modal__input" type="text" placeholder="Ім'я">
+                        <input class="basket__modal__input" type="text" placeholder="Прізвище">
+                    </div>
+                    <input class="basket__modal__input" type="telephone" placeholder="Телефон">
+                    <button class="btn btn-primary" type="submit">Залишити заявку</button>
+                </form>
+                </div>
+            </div>
+        </div>
+        </div>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ul class="header-sidemenu">

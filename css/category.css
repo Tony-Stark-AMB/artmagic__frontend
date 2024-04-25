@@ -257,6 +257,7 @@
 
 .header-catalog {
   width: 8%;
+  margin: 0 10px;
 }
 .header-catalog__btn {
   width: 100%;
@@ -294,6 +295,7 @@
   }
 }
 .header-call__top {
+  width: 22%;
   margin-bottom: 5px;
 }
 .header-call__top__content {
@@ -317,6 +319,36 @@
   .header-call__text, .header-call__link {
     font-size: 12px;
   }
+}
+.header-call__btn {
+  border: none;
+  outline: none;
+  background: #fff;
+  padding: 0;
+}
+
+.header-basket__icon {
+  width: 30px;
+  color: #fff;
+}
+.header-basket__icon__wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: #3e77aa;
+  cursor: pointer;
+}
+.header-basket__icon__wrap .header-basket__icon {
+  transition: transform 0.3s ease;
+}
+.header-basket__icon__wrap:hover .header-basket__icon {
+  transform: scale(1.1);
+}
+.header-basket__wrap {
+  margin-left: 10px;
+  width: 5%;
 }
 
 .mobile-menu {
@@ -527,6 +559,33 @@
 
 .login__registration {
   height: 350px;
+}
+
+.call__modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 30vh;
+}
+.call__modal__form input[type=text], .call__modal__form input[type=telephone] {
+  width: 80%;
+  padding: 5px 0 5px 10px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #ddd;
+}
+.call__modal__input__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.call__modal__input__wrap input[type=text] {
+  width: 45%;
+  padding: 5px 0 5px 10px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #ddd;
 }
 
 .footer {
