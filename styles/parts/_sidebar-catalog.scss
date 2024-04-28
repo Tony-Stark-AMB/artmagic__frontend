@@ -1,13 +1,30 @@
 .sidebar-main{
+    padding: 10px 0; 
+    border-right: 1px solid $c5;
+    min-height: inherit;
     width: 80%;
     height: 10vh;
     border: none;
     &__wrap{
+        width: 100%;    
+        grid-area: sidebar;
+        min-height: 100vh;
         top: 200px;
-        position: fixed;
+        position: initial;
     }
+    & > hr{
+        margin: 0 auto;
+    }
+
     &__list{
-        min-height: 30vh;
+       padding: 16px 24px;
+       min-height: 30vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+    }
+    &__item{
+        accent-color: $c17;
     }
     &__search{
         width: 90%;

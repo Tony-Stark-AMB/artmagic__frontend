@@ -521,6 +521,7 @@
                     <input class="call__modal__input" type="text" placeholder="Прізвище">
                 </div>
                 <input class="call__modal__input" type="telephone" placeholder="Телефон">
+                <textarea placeholder="Ваше питання"></textarea>
                 <button class="btn btn-primary" type="submit">Залишити заявку</button>
             </form>
             </div>
@@ -528,22 +529,59 @@
     </div>
     </div>
     <div class="modal fade modal__basket" id="basket__modal" tabindex="-1" aria-labelledby="basket__modal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content basket__modal">
+        <div class="modal-dialog basket__modal">
+            <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body basket__modal__body">
-                <form class="basket__modal__form" action="">
-                    <div class="basket__modal__input__wrap">
-                        <input class="basket__modal__input" type="text" placeholder="Ім'я">
-                        <input class="basket__modal__input" type="text" placeholder="Прізвище">
+                <div class="swiper basket__modal__swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="basket__modal__cart">
+                            <div class="cart__product">
+                                <div class="cart__product__overlook">
+                                    <div class="overlook__img__wrap">
+                                        <img class="overlook__img" src="./assets/products/product-1.png" alt="">
+                                    </div>
+                                    <p class="overlook__name">
+                                        product 1
+                                    </p>
+                                    
+                                </div>
+                                <div class="cart__product__btns">
+                                    <button class="btns__btn">-</button>
+                                    <input class="btns__count" value="1"/>
+                                    <button class="btns__btn">+</button>
+                                </div>
+                                <div class="cart__product__price">500.00 грн</div>
+                            </div>
+                            <div class="cart__product">
+                                <div class="cart__product__overlook">
+                                    <div class="overlook__img__wrap">
+                                        <img class="overlook__img" src="./assets/products/product-1.png" alt="">
+                                    </div>
+                                    <p class="overlook__name">
+                                        product 1
+                                    </p>
+                                    
+                                </div>
+                                <div class="cart__product__btns">
+                                    <button class="btns__btn">-</button>
+                                    <input class="btns__count" value="1"/>
+                                    <button class="btns__btn">+</button>
+                                </div>
+                                <div class="cart__product__price">500.00 грн</div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
                     </div>
-                    <input class="basket__modal__input" type="telephone" placeholder="Телефон">
-                    <button class="btn btn-primary" type="submit">Залишити заявку</button>
-                </form>
-                </div>
+                    <div class="swiper-btn-next"></div>
+                    <div class="swiper-btn-prev"></div>
+                  </div>
             </div>
         </div>
         </div>

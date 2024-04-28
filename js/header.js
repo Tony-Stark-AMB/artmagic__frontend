@@ -97,3 +97,14 @@ new Swiper(".login__registration", {
   noSwiping: false,
   modules: [Navigation]
 });
+
+new Swiper(".basket__modal__swiper", {
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev",
+  },
+  speed: 1000,
+  allowTouchMove: false,
+  noSwiping: false,
+  modules: [Navigation]
+});
