@@ -1,7 +1,4 @@
-@import "./fonts", "./colors", 
-        "./parts/header",
-        "./parts/sidebar-main", "./parts/main",
-        "./parts/footer";
+@import "./parts/fonts", "./parts/colors";
 
 html, body{
     overflow-x: hidden;
@@ -34,6 +31,12 @@ p{
     box-sizing: border-box;
 }
 
+.container__small{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
 
 .logo{
     width: 50px;

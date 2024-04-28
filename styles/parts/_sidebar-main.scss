@@ -3,10 +3,9 @@
     border-right: 1px solid $c5;
     min-height: inherit;
     &__wrap{
-        width: 20%;    
+        width: 100%;    
         grid-area: sidebar;
-        position: fixed;
-        min-height: 200vh;
+        min-height: 195vh;
     }
     & > hr{
         margin: 0 auto;

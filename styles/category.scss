@@ -1,9 +1,11 @@
-@import "./colors", "./parts/main-products", "./parts/category-products", "./parts/header", "./parts/footer";
+@import "./parts/colors", "./parts/main-products", "./parts/category-products", "./parts/header", "./parts/footer";
 
 .main{
     margin: 40px 0 0 0;
     &__wrap{
         display: block;
+        padding: 100px 0 40px 0;
+        flex-grow: 1;
     }
     &__title{
         margin: 40px 0 0 0;
@@ -95,103 +97,7 @@
         object-fit: cover;
     }
 }
- 
-.footer{
 
-    padding: 40px 0 0 0;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 -2px 4px 0 rgba(0, 0, 0, 0.12);
-    &__list{
-        display: flex;
-        justify-content: space-around;
-    }
-    &__info{
-        padding: 16px 24px;
-        min-height: 10vh;
-        &__title{
-            margin-bottom: 15px;
-        }
-        &__list{
-            min-height: inherit;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        &__item{}
-        &__link{
-            color: $c8;
-            transition: color .3s ease;
-            &:hover{
-                color: $c9;
-            }
-        }
-    }
-
-    &__help{
-        padding: 16px 24px;
-        min-height: 10vh;
-        &__title{
-            margin-bottom: 15px;
-        }
-        &__list{
-            min-height: inherit;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        &__item{}
-        &__link{
-            color: $c8;
-            transition: color .3s ease;
-            &:hover{
-                color: $c9;
-            }
-        }
-    }
-
-    &__service{
-        padding: 16px 24px;
-        min-height: 15vh;
-        &__title{
-            margin-bottom: 15px;
-        }
-        &__list{
-            min-height: inherit;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        &__item{}
-        &__link{
-            color: $c8;
-            transition: color .3s ease;
-            &:hover{
-                color: $c9;
-            }
-        }
-    }
-
-    &__bottom{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-top: 1px solid $c5;
-        
-    }
-
-    &__approve{
-        width: 15%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    &__underground{
-        padding: 10px 0;
-        &__text{
-            font-size: 14px;
-            color: $c8;
-        }
-    }
-}
 
 .swiper{
     margin-left: 0;

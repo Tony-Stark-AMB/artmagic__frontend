@@ -1,4 +1,4 @@
-@import "./colors", "./parts/main-products", "./parts/category-products", "./parts/sidebar-catalog", "./parts/header", "./parts/footer";
+@import "./parts/colors", "./parts/main-products", "./parts/category-products", "./parts/sidebar-catalog", "./parts/header", "./parts/footer";
 
 .main{
     border-left: 1px solid $c5;
@@ -7,7 +7,8 @@
     &__wrap{
         overflow-y: hidden;
         overflow-x: hidden;
-        padding: 120px 0 40px 0;
+        flex-grow: 1;
+        padding: 120px 0 20px 0;
         display: grid;
         grid-template-columns: 20% calc(100% / 5 * 4);
         grid-template-rows: 60px 20px calc(100% - 40px);
@@ -52,13 +53,21 @@
             }
             &__price{
                 align-self: flex-start;
-                margin-bottom: 10px;
                 color: $c19;
                 font-weight: 600;
+                &__wrap{
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
             }
         }
     }
 }
+
+
 
 
 

@@ -1,8 +1,10 @@
+@import "./colors";
+
 .header{
     top: 0;
     left: 0;
     position: fixed;
-    z-index: 1000;
+    z-index: 1001;
     background-color: #fff;
     width: 100%;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
@@ -288,6 +290,9 @@
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   .full-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     transition: margin-left .5s;
   }
   
@@ -444,6 +449,28 @@
 
     }
     &__cart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &__swiper .swiper-slide{
+        max-width: 700px;
+    }
+    &__swiper .swiper-btn-next,
+    &__swiper .swiper-btn-prev{
+        background-color: $c17;
+    }
+
+    &__btn{
+        margin: 20px 20px 20px 0;
+        align-self: flex-end;
     }
 }
 
@@ -454,7 +481,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    border-bottom: 1px solid $c15;
+
     &__overlook{
         display: flex;
         justify-content: space-between;
@@ -464,6 +491,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    &__price{
+        font-size: 20px;
     }
 }
 
@@ -504,3 +534,52 @@
         border-bottom: 1px solid $c15;
     }
 }
+
+.order-choose{
+    &__content{
+        width: 40%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & input{
+            display: none;
+        }
+    }
+    &__title{
+        text-align: center;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 20vh;
+    }
+    &__input{
+        width: 60%;
+        padding: 4px 4px 4px 8px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        border: 1px solid $c5;
+    }
+}
+
+.card{
+    &-img{
+    width: 50px;
+    color: $c5;
+    cursor: pointer;
+    }
+}
+
+.wallet{
+    &-img{
+        width: 45px;
+        height: 55px;
+        color: $c5;
+        cursor: pointer;
+    }
+}
+

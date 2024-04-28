@@ -4,7 +4,8 @@
     grid-area: main;
     margin: 0 0 0 40px;
     &__wrap{
-        padding: 91px 15px 0 15px;
+        padding: 91px 15px 0px 15px;
+        flex-grow: 1;
         display: grid;
         grid-template-columns: 25% calc(100% / 4 * 3);
         grid-template-areas: "sidebar main";
