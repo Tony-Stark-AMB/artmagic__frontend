@@ -13,4 +13,4 @@ const {catalogCarousel} = {
     modules: [Pagination, Navigation]
 }   
 
-new Swiper(".main__catalog__carousel", catalogCarousel);
+new Swiper(".main-catalog__carousel", catalogCarousel);

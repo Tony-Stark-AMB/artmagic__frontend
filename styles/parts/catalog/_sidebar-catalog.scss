@@ -1,13 +1,23 @@
-.sidebar-main{
-    width: 80%;
-    height: 10vh;
+// Бокова панель catalog.html
+.aside-catalog{
+    padding: 40px 0; 
+    min-height: inherit;
+    width: 100%;
     border: none;
-    &__wrap{
-        top: 200px;
-        position: fixed;
+    min-height: 100vh;
+    & > hr{
+        margin: 0 auto;
     }
+
     &__list{
-        min-height: 30vh;
+       padding: 16px 24px;
+       min-height: 30vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+    }
+    &__item{
+        accent-color: $c17;
     }
     &__search{
         width: 90%;

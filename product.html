@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/product.css">
     <title>Document</title>
 </head>
 <body >
@@ -94,264 +94,75 @@
                     </div>        
                 </div>
             </div>        
+            <!-- <div class="mobile-menu bg13">
+                <div class="mobile-menu__container__custom">
+                    <div class="mobile-menu__icon-close__wrap">
+                        <div class="mobile-menu__icon-close" onclick="closeBurgerMenu()">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 384 512">
+                                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5
+                                 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3
+                                  0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                        </div>
+                    </div>
+                    <ul class="mobile-menu__list font__raleway">
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="">Головна</a></li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="">Оплата і доставка</a></li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="">Новини</a></li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="">Допомога</a></li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="">Контакти</a></li>
+                    </ul>
+                </div>
+            </div> -->
         </header>
-        <div class="main-index__wrap container__custom__sidebar">
-            <main class="main-index">
-                <section class="swiper main-index__banner">
-                    <div class="swiper-wrapper main-index__banner__list">
-                        <div class="swiper-slide main-index__banner__slide">
-                            <div class="main-index__banner__slide__img__wrap">
-                                <img class="main-index__banner__slide__img" src="./assets/slider-main/slider-1.png" alt="">
-                            </div>
+        <div class="main__wrap">
+            <main class="main container__small">
+                <div class="product-page">
+                    <div class="product-image__content">
+                        <div class="product-image__wrap">
+                            <img class="product-image" src="./assets/products/product-1.png" alt="Product Image" class="main-image">
                         </div>
-                        <div class="swiper-slide main-index__banner__slide">
-                            <div class="main-index__banner__slide__img__wrap">
-                                <img class="main-index__banner__slide__img" src="./assets/slider-main/slider-2.png" alt="">
+                        <div class="product-thumbnails">
+                            <div class="thumbnail__wrap">
+                                <img src="./assets/products/product-1.png" alt="Thumbnail Image 1" class="thumbnail">
                             </div>
-                        </div>
-                        <div class="swiper-slide main-index__banner__slide">
-                            <div class="main-index__banner__slide__img__wrap">
-                                <img class="main-index__banner__slide__img" src="./assets/slider-main/slider-3.png" alt="">
+                            <div class="thumbnail__wrap">
+                                <img src="./assets/products/product-1.png" alt="Thumbnail Image 2" class="thumbnail">
                             </div>
-                        </div>
-                        <div class="swiper-slide main-index__banner__slide">
-                            <div class="main-index__banner__slide__img__wrap">
-                                <img class="main-index__banner__slide__img" src="./assets/slider-main/slider-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide main-index__banner__slide">
-                            <div class="main-index__banner__slide__img__wrap">
-                                <img class="main-index__banner__slide__img" src="./assets/slider-main/slider-5.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide main-index__banner__slide">
-                            <div class="main-index__banner__slide__img__wrap">
-                                <img class="main-index__banner__slide__img" src="./assets/slider-main/slider-6.png" alt="">
+                            <div class="thumbnail__wrap">
+                                <img src="./assets/products/product-1.png" alt="Thumbnail Image 3" class="thumbnail">
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                </section>
-                <section class="main-index__catalog">
-                    <h3 data-aos="fade-left" class="main-index__catalog__title">
-                        Новинки
-                    </h3>
-                    <div class="swiper products-index__list__wrap">
-                        <div class="swiper-wrapper products-index__list">
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="./assets/products/product-1.png" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1 asdsaddsadasdadsad </p>
-                            <span class="products-index__item__price">500 грн</span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="./assets/products/product-2.png" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 2</p>
-                            <span class="products-index__item__price">700 грн</span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="./assets/products/product-3.png" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 3</p>
-                            <span class="products-index__item__price">300 грн</span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="./assets/products/product-1.png" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1 asdsaddsadasdadsad </p>
-                            <span class="products-index__item__price">500 грн</span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="./assets/products/product-2.png" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 2</p>
-                            <span class="products-index__item__price">700 грн</span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="./assets/products/product-3.png" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 3</p>
-                            <span class="products-index__item__price">300 грн</span>
-                          </div>
-
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1</p>
-                            <span class="products-index__item__price"></span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1</p>
-                            <span class="products-index__item__price"></span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1</p>
-                            <span class="products-index__item__price"></span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1</p>
-                            <span class="products-index__item__price"></span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1</p>
-                            <span class="products-index__item__price"></span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1</p>
-                            <span class="products-index__item__price"></span>
-                          </div>
-
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1</p>
-                            <span class="products-index__item__price"></span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1</p>
-                            <span class="products-index__item__price"></span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1</p>
-                            <span class="products-index__item__price"></span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1</p>
-                            <span class="products-index__item__price"></span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1</p>
-                            <span class="products-index__item__price"></span>
-                          </div>
-                          <div class="swiper-slide products-index__item">
-                            <div class="main__catallog__item__img__wrap">
-                                <img class="products-index__item__img" src="" alt="">
-                            </div>
-                            <p class="products-index__item__title">product 1</p>
-                            <span class="products-index__item__price"></span>
-                          </div>
-                        </div>
-                        <div class="swiper-pagination"></div>  
-                    </div>
-                    <h3 data-aos="fade-down" class="promotion__title">
-                        Акційні пропозиції
-                    </h3>
-                    <div class="main__promotion">
-                        <div class="promotion__list">
-                            <div data-aos="fade-left" class="promotion__item">
-                                <div class="promotion__item__header">
-                                    
-                                </div>
-                                <div class="promotion__img__wrap">
-                                    <img class="promotion__img" src="./assets/promotion/promotion-1.jpg" alt="">
-                                </div>
-                                <div class="promotion__item__footer">
-
-                                </div>
-                            </div>
-                            <div data-aos="fade-right" class="promotion__item">
-                                <div class="promotion__item__header">
-                                    
-                                </div>
-                                <div class="promotion__img__wrap">
-                                    <img class="promotion__img" src="./assets/promotion/promotion-2.jpg" alt="">
-                                </div>
-                                <div class="promotion__item__footer">
-
-                                </div>
-                            </div>
-                            <div data-aos="fade-left"  class="promotion__item">
-                                <div class="promotion__item__header">
-                                    
-                                </div>
-                                <div class="promotion__img__wrap">
-                                    <img class="promotion__img" src="./assets/promotion/promotion-2.webp" alt="">
-                                </div>
-                                <div class="promotion__item__footer">
-
-                                </div>
-                            </div>
-                            <div data-aos="fade-right" class="promotion__item">
-                                <div class="promotion__item__header">
-                                    
-                                </div>
-                                <div class="promotion__img__wrap">
-                                    <img class="promotion__img" src="./assets/promotion/promotion-4.jpg" alt="">
-                                </div>
-                                <div class="promotion__item__footer">
-
-                                </div>
-                            </div>
+                    <div class="product-details">
+                        <h2 class="product-title">Назва продукту</h2>
+                        <p class="product-description">Опис продукту Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ab mollitia consequuntur cupiditate nostrum fugit ad facilis ipsum qui sit est quae fuga voluptas quibusdam ut sed, aperiam unde corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aperiam quos dolor consequatur vitae fugit rem labore asperiores inventore possimus aliquid exercitationem atque dolore minus facere dolorem perferendis, natus eos!</p>
+                        <div class="product-details__buttons">
+                            <button class="product-details__btn__add-to-cart">Додати до кошика</button>
+                            <button class="product-details__btn__continue-shopping">До каталогу</button>
                         </div>
                     </div>
-                </section>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Product Specifications</h3>
+                    <table>
+                        <tr>
+                            <td>Specification 1</td>
+                            <td>Value 1</td>
+                        </tr>
+                        <tr>
+                            <td>Specification 2</td>
+                            <td>Value 2</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </table>
+                </div>
             </main>
-            <aside class="aside-index__wrap">
-                    <section class="aside-index">
-                        <ul class="aside-index__list">
-                            <li class="aside-index__item">
-                                <a class="aside-index__link" href="category.html">Блокноти, папір, картон</a></li>
-                            <li class="aside-index__item">
-                                <a class="aside-index__link" href="">Графіка</a></li>
-                            <li class="aside-index__item">
-                                <a class="aside-index__link" href="">Живопис</a></li>
-                            <li class="aside-index__item">
-                                <a class="aside-index__link" href="">Канцтовари</a></li>
-                            <li class="aside-index__item">
-                                <a class="aside-index__link" href="">Мольберти та етюдники</a></li>
-                            <li class="aside-index__item">
-                                <a class="aside-index__link" href="">Полотна та планшети</a></li>
-                            <li class="aside-index__item">
-                                <a class="aside-index__link" href="">Реставрація</a></li>
-                            <li class="aside-index__item">
-                                <a class="aside-index__link" href="">Скульптура і гравюра</a></li>
-                            <li class="aside-index__item">
-                                <a class="aside-index__link" href="">Творчість для дітей</a></li>
-                            <li class="aside-index__item">
-                                <a class="aside-index__link" href="">Хоббі та декор</a></li>
-                        </ul>
-                        <div class="aside-index__login bg5 font__raleway">
-                            <h1 class="aside-index__login__title">Ласкаво просимо!</h1>
-                            <button class="aside-index__login__btn bg17">Увійти до особистого кабінету</button>
-                        </div>
-                    </section>
-            </aside>
         </div>
         <footer class="footer">
             <div class="footer__list container__custom">

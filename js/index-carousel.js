@@ -1,9 +1,6 @@
-// import Aos from "aos.js";
 import {Swiper, Navigation, Pagination} from "./import.js";
 
-// console.log(Aos)
-
-export const {mainBanner, catalogCarousel} = {
+export const {mainBanner, productsCarousel} = {
  
   mainBanner: {
     autoplay: {
@@ -17,7 +14,7 @@ export const {mainBanner, catalogCarousel} = {
       dynamicBullets: true,
     },
   },
-  catalogCarousel: {
+  productsCarousel: {
     slidesPerView: 5,
     slidesPerGroup: 5,
     speed: 2000,
@@ -32,8 +29,8 @@ export const {mainBanner, catalogCarousel} = {
   modules: [Navigation, Pagination]
 }
 
-new Swiper(".main__banner", mainBanner);
-new Swiper(".main__catalog__list__wrap", catalogCarousel);
+new Swiper(".main-index__banner", mainBanner);
+new Swiper(".products-index__list__wrap", productsCarousel);
 
 
 
