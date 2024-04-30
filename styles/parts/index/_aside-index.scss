@@ -1,10 +1,12 @@
-.sidebar-main{
+//aside-index
+
+.aside-index{
     padding: 10px 0; 
     border-right: 1px solid $c5;
     min-height: inherit;
     &__wrap{
         width: 100%;    
-        grid-area: sidebar;
+        grid-area: aside;
         min-height: 195vh;
     }
     & > hr{
@@ -55,7 +57,7 @@
             border-radius: 8px;
             transition: background-color .3s ease;
             &:hover{
-                background-color: #3b688f;;
+                background-color: #3b688f;
             }
         }
     }

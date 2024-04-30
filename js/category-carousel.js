@@ -1,6 +1,6 @@
 import { Swiper, Navigation, Pagination } from "./import.js";
 
-const {categoryBanner, brandsBanner, catalogProducts} = {
+const {categoryBanner, brandsBanner, productsCarousel} = {
  
     categoryBanner: {
       autoplay: {
@@ -28,7 +28,7 @@ const {categoryBanner, brandsBanner, catalogProducts} = {
       loop: true,
     },
 
-    catalogProducts: {
+    productsCarousel: {
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -41,6 +41,6 @@ const {categoryBanner, brandsBanner, catalogProducts} = {
     modules: [Navigation, Pagination]
 }
 
-new Swiper(".main__category-banner", categoryBanner);
-new Swiper(".main__category-brands", brandsBanner);
-new Swiper(".main__catalog__list__wrap", catalogProducts);
+new Swiper(".category-banner", categoryBanner);
+new Swiper(".category-brands", brandsBanner);
+new Swiper(".category-products__carousel", productsCarousel); 

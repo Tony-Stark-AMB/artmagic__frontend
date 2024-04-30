@@ -1,17 +1,10 @@
-.sidebar-main{
-    padding: 10px 0; 
-    border-right: 1px solid $c5;
+// Бокова панель catalog.html
+.aside-catalog{
+    padding: 40px 0; 
     min-height: inherit;
-    width: 80%;
-    height: 10vh;
+    width: 100%;
     border: none;
-    &__wrap{
-        width: 100%;    
-        grid-area: sidebar;
-        min-height: 100vh;
-        top: 200px;
-        position: initial;
-    }
+    min-height: 100vh;
     & > hr{
         margin: 0 auto;
     }
