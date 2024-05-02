@@ -512,8 +512,8 @@
                 <div class="swiper basket__modal__swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <div class="basket__modal__cart">
-                            <div class="cart__product">
+                        <div class="basket__modal__cart" id="basket-products">
+                            <!-- <div class="cart__product">
                                 <div class="cart__product__overlook">
                                     <div class="overlook__img__wrap">
                                         <img class="overlook__img" src="./assets/products/product-1.png" alt="">
@@ -521,16 +521,15 @@
                                     <p class="overlook__name">
                                         product 1
                                     </p>
-                                    
                                 </div>
                                 <div class="cart__product__btns">
-                                    <button class="btns__btn">-</button>
+                                    <button class="btns__btn" data-value="-">-</button>
                                     <input class="btns__count" value="1"/>
-                                    <button class="btns__btn">+</button>
+                                    <button class="btns__btn" data-value="+">+</button>
                                 </div>
                                 <div class="cart__product__price">500.00 грн</div>
                             </div>
-                            <div class="cart__product">
+                            <div class="cart__product" >
                                 <div class="cart__product__overlook">
                                     <div class="overlook__img__wrap">
                                         <img class="overlook__img" src="./assets/products/product-1.png" alt="">
@@ -549,7 +548,7 @@
                             </div>
                             <button class="btn btn-primary basket__modal__btn" onclick="window.location.href = 'catalog.html'">
                                 Повернутись до покупок
-                            </button>
+                            </button> -->
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -593,14 +592,15 @@
 
                       </div>
                     </div>
-                    <div class="modal-footer basket__modal__footer">
-                        <div class="modal__footer__btns">
-                            <div class="btn btn-primary swiper-btn-next">Перейти до оформлення</div>
-                            <div class="btn btn-primary swiper-btn-prev">Повернутись до кошика</div>
-                        </div>
-                        <p class="modal__footer__text">Сума: 1000 грн</p>
-                    </div>
                 </div>  
+                
+            </div>
+            <div class="modal-footer basket__modal__footer">
+                <div class="modal__footer__btns">
+                    <div class="btn btn-primary swiper-btn-next">Перейти до оформлення</div>
+                    <div class="btn btn-primary swiper-btn-prev">Повернутись до кошика</div>
+                </div>
+                <p class="modal__footer__text">Сума: 1000 грн</p>
             </div>
         </div>
         </div>
@@ -678,5 +678,6 @@
     <script type="module" src="./js/index-carousel.js"></script>
     <script type="module" src="./js/index.js"></script>
     <script type="module" src="./js/header.js"></script>
+    <script type="module" src="./js/basket.js"></script>
 </body>
 </html>
