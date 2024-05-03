@@ -385,13 +385,16 @@
 
 .basket__modal{
     max-width: 700px;
+    overflow-y: initial !important;
     &__body{
-        
+        overflow-y: auto;
+        height: 400px;
     }
     &__swiper{
 
     }
     &__cart{
+        // overflow-y: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -426,6 +429,7 @@
     padding: 20px 0;
 
     &__overlook{
+        width: 30%;
         display: flex;
         justify-content: space-between;
         align-items: center;
