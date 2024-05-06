@@ -397,8 +397,9 @@
         // overflow-y: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+
         align-items: center;
+        min-height: 370px;
     }
     &__footer{
         display: flex;
@@ -415,9 +416,9 @@
     }
 
     &__btn{
-        margin: 20px 20px 20px 0;
         align-self: flex-end;
     }
+
 }
 
 .cart__product{
@@ -426,7 +427,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
 
     &__overlook{
         width: 30%;
@@ -442,6 +443,24 @@
     &__price{
         font-size: 20px;
     }
+    &__garbage{
+        width: 25px;
+        height: 25px;
+        color: $c6;
+        &__wrap{
+            padding: 5px;
+            border: none;
+            outline: none;
+            background-color: $c17;
+            border-radius: 8px;
+            & .cart__product__garbage{
+                transition: color .3s ease;   
+            }
+            &:hover .cart__product__garbage{
+                color: $c9;
+            }
+        }
+    }
 }
 
 .overlook{
@@ -452,6 +471,19 @@
             width: 100px;
             height: 100px;
         }
+    }
+}
+
+.modal-footer{
+    &__btns{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text{
+        font-weight: 700;
+        font-size: 24px;
     }
 }
 
@@ -501,7 +533,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        min-height: 20vh;
+        min-height: 28vh;
     }
     &__input{
         width: 60%;
