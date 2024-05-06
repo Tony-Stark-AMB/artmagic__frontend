@@ -515,13 +515,16 @@
 }
 .basket__modal__body {
   overflow-y: auto;
-  height: 400px;
+  height: 340px;
 }
 .basket__modal__cart {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 370px;
+}
+.basket__modal__cart__text {
+  font-size: 24px;
+  font-weight: 700;
 }
 .basket__modal__footer {
   display: flex;

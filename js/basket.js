@@ -1,41 +1,10 @@
-class Product {
-    constructor(name, price, imageSrc) {
-      this.name = name;
-      this.price = price;
-      this.quantity = 1;
-      this.imageSrc = imageSrc
-      this.id = Product.nextId(); // Assigning a unique ID to each object
-    }
-  
-    static currentId = 1; // Static variable to keep track of the IDs
-  
-    static nextId() {
-        return Product.currentId++;
-    }
-
-    static allTotalCost(productsArr){
-        return productsArr.reduce((acc, curr) => +acc + (curr.quantity * curr.price) , [])
-    }
-
-    static deleteProduct(productsArr, id){
-        return productsArr.filter((product) => product.id != id);
-    }
-
-    addOne(){this.quantity++};
-
-    minusOne(){
-        if(this.quantity > 1){
-            this.quantity--;
-        }
-        return;
-    }
-}
-
+import { Product } from "./classes/product.js";
 
 
 let productsArr = [
     new Product("product 1", 500, "./assets/products/product-1.png"),
     new Product("product 2", 600, "./assets/products/product-2.png"),
+    new Product("product 3", 700, "./assets/products/product-3.png"),
     new Product("product 3", 700, "./assets/products/product-3.png"),
 ]
 
@@ -161,6 +130,19 @@ getAllTotal(productsArr);
 const deleteProduct = (id) => {
     productsArr = Product.deleteProduct(productsArr, id);
     document.getElementById(`cart__product__${id}`).remove();
+    if(productsArr.length <= 3){
+        productsContainer.style.overflowY = "hidden";
+    }
+    productsContainer.style.overflowY = "auto";
+    // text for empty basket
+    const text = document.createElement("p")
+    text.textContent = "Ваш кошик пустий";
+    text.classList.add("basket__modal__cart__text");
+    if(productsArr.length == 0){
+        productsContainer.appendChild(text);
+    } 
+    
+
     getAllTotal(productsArr);
 }
 
