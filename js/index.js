@@ -1,3 +1,5 @@
+import { createProducts, Product } from "./classes/product.js";
+
 const cardInput = document.querySelector(".card-input");
 const walletInput = document.querySelector(".wallet-input");
 
@@ -23,3 +25,30 @@ function handleInputChange() {
 
 cardInput.addEventListener('change', handleInputChange);
 walletInput.addEventListener('change', handleInputChange);
+
+// Для продуктів
+
+
+const productsContainer = document.getElementById("productsContainerIndex");
+
+const productsArr = [
+    new Product("product 1", 500, "./assets/products/product-1.png"),
+    new Product("product 2", 600, "./assets/products/product-2.png"),
+    new Product("product 3", 700, "./assets/products/product-3.png"),
+    new Product("product 1", 500, "./assets/products/product-1.png"),
+    new Product("product 2", 600, "./assets/products/product-2.png"),
+
+   new Product("product 1", 500, "./assets/products/product-1.png"),
+    new Product("product 2", 600, "./assets/products/product-2.png"),
+    new Product("product 3", 700, "./assets/products/product-3.png"),
+    new Product("product 1", 500, "./assets/products/product-1.png"),
+    new Product("product 2", 600, "./assets/products/product-2.png"),
+
+    new Product("product 1", 500, "./assets/products/product-1.png"),
+    new Product("product 2", 600, "./assets/products/product-2.png"),
+    new Product("product 3", 700, "./assets/products/product-3.png"),
+    new Product("product 1", 500, "./assets/products/product-1.png"),
+    new Product("product 2", 600, "./assets/products/product-2.png"),
+];
+
+createProducts("index", productsArr, productsContainer);
