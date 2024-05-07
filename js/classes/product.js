@@ -30,3 +30,35 @@ export class Product {
         return;
     }
 }
+
+// страница, id  контейнера, и отрисовка относительно обьекта (Product)
+export const createProducts = (page, productsArr, productsContainer) => {
+    
+    productsArr.forEach( (product) => {
+        // <div class="products-index__item"></div>
+        const productItem = document.createElement("div");
+        productItem.classList.add(`products-${page}__item`, "swiper-slide");
+        // <div class="products-index__item__img__wrap"></div>
+        const productItemImgWrap = document.createElement("div");
+        productItemImgWrap.classList.add(`products-${page}__item__img__wrap`);
+        productItem.appendChild(productItemImgWrap);
+        // <img class="products-index__item__img" />
+        const productItemImg = document.createElement("img");
+        productItemImg.classList.add(`products-${page}__item__img`);
+        productItemImg.setAttribute("src", product.imageSrc);
+        productItemImgWrap.appendChild(productItemImg);
+        // <p class="products-index__item__title"></p>
+        const productTitle = document.createElement("p");
+        productTitle.classList.add(`products-${page}__item__title`)
+        productTitle.textContent = product.name;
+        productItem.appendChild(productTitle);
+        // <span class="products-index__item__price"></span>
+        const productPrice = document.createElement("span");
+        productPrice.classList.add(`products-${page}__item__price`)
+        productPrice.textContent = `${product.price}.00 грн`;
+        productItem.appendChild(productPrice);
+        productsContainer.appendChild(productItem);
+    });  
+};
+
+
